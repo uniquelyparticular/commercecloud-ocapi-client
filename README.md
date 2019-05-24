@@ -101,18 +101,36 @@ import ShopApi from 'commercecloud-ocapi-client'
 const config = {
   clientUsername: 'username',
   clientPassword: 'password',
+  ...
 }
 
 ShopApi.ApiClient.instance = new ShopApi.ApiClient(config)
 ```
 
-Or to use oAuth token:
+Or to use oAuth token (generated manually/externally):
 
 ```js
 import ShopApi from 'commercecloud-ocapi-client'
 
 const config = {
-  oauth2AccessToken: 'token'
+  oauth2AccessToken: 'token',
+  ...
+}
+
+ShopApi.ApiClient.instance = new ShopApi.ApiClient(config)
+```
+
+Or to autogenerate oAuth token:
+
+```js
+import ShopApi from 'commercecloud-ocapi-client'
+
+const config = {
+  clientUsername: 'BMusername',
+  clientPassword: 'BMpassword',
+  clientId: 'OCAPIclientId',
+  clientSecret: 'OCAPIclientSecret',
+  ...
 }
 
 ShopApi.ApiClient.instance = new ShopApi.ApiClient(config)

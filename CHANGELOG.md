@@ -1,3 +1,9 @@
+## v0.3.0 (May 24, 2019)
+- Added support for oAuth token generation, persistence and validation/rotation
+
+## v0.2.0 (May 23, 2019)
+- Updated all majore packages to latest versions
+
 ## v0.1.9 (May 7, 2019)
 - Remove deprecated babel dependency
 
