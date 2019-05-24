@@ -115,7 +115,7 @@ export default class ApiClient {
         if (oauth2AccessToken) {
             this.authentications.oauth2_application.accessToken = oauth2AccessToken
         }
-        
+
         if (clientId && clientSecret && clientUsername && clientPassword) {
             this.authentications.oauth2_application.accessCredentials = {
                 clientId,
