@@ -1,6 +1,6 @@
 {
   "name": "commercecloud-ocapi-client",
-  "version": "0.1.9",
+  "version": "0.2.1",
   "description": "An ES6 JavaScript Client for Salesforce Open Commerce API",
   "repository": "https://github.com/mobify/commercecloud-ocapi-client",
   "license": "SEE LICENSE IN LICENSE",
@@ -27,6 +27,7 @@
   "dependencies": {
     "atob": "^2.1.2",
     "btoa": "^1.2.1",
+    "node-localstorage": "^1.3.1",
     "querystring": "^0.2.0",
     "superagent": "^5.0.5"
   },
