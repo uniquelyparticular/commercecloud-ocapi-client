@@ -1,6 +1,7 @@
 .DS_Store
 *.tgz
 
+localStorage/
 dist/
 es/
 lib/
