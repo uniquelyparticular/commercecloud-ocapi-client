@@ -10,7 +10,8 @@
     "fs": false
   },
   "files": [
-    "dist"
+    "dist",
+    "rollup.config.js"
   ],
   "scripts": {
     "copyright:lint": "copyright 'src/**/*.js' 'bin/**/*.js' 'test/**/*.js'",
