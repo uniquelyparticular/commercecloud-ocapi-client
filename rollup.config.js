@@ -4,10 +4,10 @@ import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
 export default [{
-    input: 'src/index.js',
+    input: './src/index.js',
     output: {
         name: 'ocapi-client',
-        file: 'dist/commercecloud-ocapi-client.umd.js',
+        file: './dist/commercecloud-ocapi-client.umd.js',
         format: 'umd'
     },
     plugins: [
@@ -22,12 +22,12 @@ export default [{
             browser: true,
         }),
         babel({
-            exclude: ['node_modules/**']
+            exclude: ['./node_modules/**']
         })
     ]
 },
 {
-    input: 'src/index.js',
+    input: './src/index.js',
     output: [{
         file: pkg.main,
         format: 'cjs'
@@ -38,7 +38,7 @@ export default [{
     external: ['superagent', 'querystring'],
     plugins: [
         babel({
-            exclude: ['node_modules/**']
+            exclude: ['./node_modules/**']
         })
     ]
 }]
