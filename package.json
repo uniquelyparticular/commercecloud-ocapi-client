@@ -20,9 +20,8 @@
     "lint:js": "eslint '**/*.js'",
     "lint:fix": "npm run lint:js -- --fix",
     "test": "NODE_ENV=test mocha --require @babel/register $(find test/api -name '*.spec.js')",
-    "prebuild": "npm run lint",
     "build": "NODE_ENV=production rollup -c",
-    "prepack": "npm run build"
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "atob": "^2.1.2",
