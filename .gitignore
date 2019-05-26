@@ -2,7 +2,6 @@
 *.tgz
 
 localStorage/
-dist/
 es/
 lib/
 tmp/
